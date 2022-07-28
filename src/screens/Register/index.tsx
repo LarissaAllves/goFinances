@@ -4,12 +4,12 @@ import { useForm } from "react-hook-form";
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 
-import { Button } from "../../Components/Form/Button";
-import { CategorySelectButton } from "../../Components/Form/CategorySelectButton";
-import { Input } from "../../Components/Form/Input";
-import { InputForm } from "../../Components/Form/InputForm";
+import { Button } from "../../components/Form/Button";
+import { CategorySelectButton } from "../../components/Form/CategorySelectButton";
+import { Input } from "../../components/Form/Input";
+import { InputForm } from "../../components/Form/InputForm";
 
-import { TransactionTypeButton } from "../../Components/Form/TransactionTypeButton";
+import { TransactionTypeButton } from "../../components/Form/TransactionTypeButton";
 import { CategorySelect } from "../CategorySelect";
 import {
   Container,
@@ -21,9 +21,9 @@ import {
 } from "./styles";
 
 export interface FormData {
-  // [name: string]: any;
-  name: string;
-  amount: string;
+  [name: string]: any;
+  // name: string;
+  // amount: string;
 }
 
 const schema = Yup.object().shape({
